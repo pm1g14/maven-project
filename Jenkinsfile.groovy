@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean pipelineAsCodeExample'
+                bat 'mvn clean pipelineAsCodeExample'
                 post {
                     success {
                         echo 'Now archiving...'
