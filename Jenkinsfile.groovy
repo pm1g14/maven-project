@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'mvn clean pipelineAsCodeExample'
+                bat 'mvn clean maven-project'
                 post {
                     success {
                         echo 'Now archiving...'
