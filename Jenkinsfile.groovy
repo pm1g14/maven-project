@@ -9,13 +9,14 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'mvn clean package'
-                post {
+            
+            }
+             post {
                     success {
                         echo 'Now archiving...'
                         archiveArtifacts artifacts: '**/target/*.war'
                     }
                 }
-            }
         }
 
     }
