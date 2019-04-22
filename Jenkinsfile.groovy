@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'tomcat-staging', defaultValue: 'localhost', description: 'some desc')
+        string(name: 'tomcat_staging', defaultValue: 'localhost', description: 'some desc')
     }
 
     triggers {
