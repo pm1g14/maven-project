@@ -29,7 +29,7 @@ pipeline {
         stage('Deploy to staging') {
             steps {
             //    build job: 'deploy-to-staging'
-                bat 'winscp **/target/*.war ${params.tomcat-staging}:C:/Program Files/Apache Software Foundation/Tomcat 7.0/webapps'
+                bat "winscp **/target/*.war ${params.tomcat-staging}:C:/Program Files/Apache Software Foundation/Tomcat 7.0/webapps"
             }
         }
 
